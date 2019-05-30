@@ -1,11 +1,13 @@
-<!-- begin header top -->
 <div class="container">
-    <!-- BEGIN LOGO -->
     <div class="page-logo">
-        <a href="javascript:;"><img th:src="@{/global/img/logo.png}" alt="logo" class="logo-default" height="50">Consejo de
-                Facultad</a>
+        <a class="logo-wrapper" href="javascript:;">
+
+            <img th:src="@{/global/img/logo.png}" alt="logo" class="logo-default" height="60">
+
+            <span class="caption-subject theme-font bold uppercase">Consejo de Facultad</span>
+        </a>
     </div>
-    <!-- END LOGO -->
+
     <!-- BEGIN RESPONSIVE MENU TOGGLER -->
     <a href="javascript:;" class="menu-toggler"></a>
     <!-- END RESPONSIVE MENU TOGGLER -->
@@ -21,8 +23,8 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li class="external">
-                        <h3>You have <strong>12 pending</strong> tasks</h3>
-                        <a href="javascript:;">view all</a>
+                        <h3>Tienes <strong>N° pendientes</strong></h3>
+                        <a href="javascript:;">Ver todos</a>
                     </li>
                     <li>
                         <div class="slimScrollDiv"
@@ -365,7 +367,7 @@
                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
                     data-close-others="true">
                     <img th:src="@{/admin/layout3/img/avatar1.jpg}" class="img-circle" alt="">
-                    <span class="username username-hide-mobile">Nick</span>
+                    <span class="username username-hide-mobile">Usuario</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-default">
                     <li>

@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
-
-<!-- BEGIN HEAD -->
-
 <head th:fragment="head" th:remove="tag">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Consejo de Facultad</title>
+
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
         type="text/css">
-    <link rel="stylesheet" th:href="@{/global/plugins/font-awesome/css/font-awesome.min.css}" />
-    <link rel="stylesheet" th:href="@{/global/plugins/simple-line-icons/simple-line-icons.min.css}" />
-    <link rel="stylesheet" th:href="@{/global/plugins/bootstrap/css/bootstrap.min.css}" />
-    <link rel="stylesheet" th:href="@{/global/plugins/uniform/css/uniform.default.css}" />
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/simple-line-icons.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
     <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
-    <link rel="stylesheet" th:href="@{/global/plugins/jqvmap/jqvmap/jqvmap.css}" />
-    <link rel="stylesheet" th:href="@{/global/plugins/morris/morris.css}" />
-    <!-- END PAGE LEVEL PLUGIN STYLES -->
-    <!-- BEGIN PAGE STYLES -->
-    <link th:href="@{/admin/pages/css/tasks.css}"rel="stylesheet" type="text/css" />
-    <!-- END PAGE STYLES -->
+  
     <!-- BEGIN THEME STYLES -->
-    <!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
-    <link rel="stylesheet" th:href="@{/global/css/components-md.css}" />
-    <link rel="stylesheet" th:href="@{/global/css/plugins-md.css}" />
-    <link rel="stylesheet" th:href="@{/admin/layout3/css/layout.css}" />
-    <link rel="stylesheet" th:href="@{/admin/layout3/css/themes/default.css}" />
-    <link rel="stylesheet" th:href="@{/admin/layout3/css/custom.css}" />
+    <!-- para las fotos se vean redondas -->
+    <link rel="stylesheet" th:href="@{/css/components-rounded.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/plugins-md.css}" />
+    <link rel="stylesheet" th:href="@{/css/layout.min.css}" />
+    <!-- <link rel="stylesheet" th:href="@{/admin/layout3/css/themes/blue-steel.css}" />
+    <link rel="stylesheet" th:href="@{/admin/layout3/css/custom.css}" /> -->
 
+    <!-- BEGIN ESTILOS PROPIOS -->
+    <link rel="stylesheet" th:href="@{/css/styles.min.css}" />
+    <!-- END ESTILOS PROPIOS -->
     <!-- END THEME STYLES -->
-    <link rel="shortcut icon" th:href="@{/global/img/favicon.ico}" />
+    <link rel="shortcut icon" th:href="@{/img/icono.png}" />
 </head>
-<!-- END HEAD -->
-
-<!-- BEGIN BODY -->
-
 <body class="page-md">
     <!-- BEGIN HEADER -->
     <div class="page-header">
@@ -59,7 +49,7 @@
     </div>
     <!-- END PAGE CONTAINER -->
     <!-- BEGIN PRE-FOOTER -->
-    <div class="page-prefooter"> 
+    <div class="page-prefooter">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
@@ -163,16 +153,14 @@
     <script th:src="@{/global/scripts/metronic.js}"></script>
     <script th:src="@{/admin/layout3/scripts/layout.js}"></script>
     <script th:src="@{/admin/layout3/scripts/demo.js}"></script>
-    <script th:src="@{/admin/pages/scripts/index3.js}"></script>
-    <script th:src="@{/admin/pages/scripts/tasks.js}"></script>
     <!-- END PAGE LEVEL SCRIPTS -->
     <script>
         jQuery(document).ready(function () {
             Metronic.init(); // init metronic core componets
             Layout.init(); // init layout
             Demo.init(); // init demo(theme settings page)
-            Index.init(); // init index page
-            Tasks.initDashboardWidget(); // init tash dashboard widget
+            // Index.init(); // init index page
+            // Tasks.initDashboardWidget(); // init tash dashboard widget
         });
     </script>
     <!-- END JAVASCRIPTS -->
