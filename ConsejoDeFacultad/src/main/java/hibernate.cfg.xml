@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <!--  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">i3attou12</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ConsejoDeFacultad</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Acta"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Alumno"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Citacion"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Decano"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Dictamen"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Docente"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Gestiondictamen"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Gestiondictamenld"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Miembroconsejofacultad"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Proveido"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Secretariodeactas"/>
+  <mapping class="pe.edu.consejo.facultad.unsch.entities.Sesion"/>
+ </session-factory>
+</hibernate-configuration>
