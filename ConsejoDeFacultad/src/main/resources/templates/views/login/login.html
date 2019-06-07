@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="views/admin/layout/layout :: head"></div>
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" th:href="@{/css/select2.css}" />
+    <link rel="stylesheet" th:href="@{/css/login-soft.css}" />
+    <link rel="stylesheet" th:href="@{/css/components-rounded.css}" />
+    <link rel="stylesheet" th:href="@{/css/plugins.css}" />
+    <link rel="stylesheet" th:href="@{/css/layout.css}" />
+    <link rel="stylesheet" th:href="@{/css/default.css}" />
+    <link rel="stylesheet" th:href="@{/css/custom.css}" />
+</head>
+
+<body class="page-md login">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="/img/logo-big.png" alt="Logo" />
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+    <div class="menu-toggler sidebar-toggler">
+    </div>
+    <!-- END SIDEBAR TOGGLER BUTTON -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        <form class="login-form" action="#" method="post">
+            <h3 class="form-title">Login</h3>
+            <div class="alert alert-danger display-hide">
+                <button class="close" data-close="alert"></button>
+                <span>
+                    Ingrese su usuario y contraseña </span>
+            </div>
+            <div class="form-group">
+                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                <label class="control-label visible-ie8 visible-ie9">Usuario</label>
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                    <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username"
+                        name="username" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label visible-ie8 visible-ie9">Contraseña</label>
+                <div class="input-icon">
+                    <i class="fa fa-lock"></i>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off"
+                        placeholder="Password" name="password" />
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn blue pull-right">
+                    Login <i class="m-icon-swapright m-icon-white"></i>
+                </button>
+            </div>
+
+            <div class="forget-password">
+                <h4>Olvidaste tu contraseña</h4>
+                <p>
+                    Contacte con el administrador
+                </p>
+            </div>
+        </form>
+        <!-- END LOGIN FORM -->
+    </div>
+    <!-- END LOGIN -->
+    <!-- BEGIN COPYRIGHT -->
+    <div class="copyright">
+        2019 &copy; Grupo 9
+    </div>
+    <!-- END COPYRIGHT -->
+
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery-migrate.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery.blockui.min.js}"></script>
+    <script th:src="@{/js/jquery.cokie.min.js}"></script>
+    <script th:src="@{/js/jquery.uniform.min.js}"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script th:src="@{/js/jquery.validate.min.js}"></script>
+    <script th:src="@{/js/jquery.backstretch.min.js}"></script>
+    <script th:src="@{/js/select2.min.js}"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script th:src="@{/js/metronic.js}"></script>
+    <script th:src="@{/js/layout.js}"></script>
+    <script th:src="@{/js/demo.js}"></script>  
+    <script th:src="@{/js/login-soft.js}"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            Login.init();
+            Demo.init();
+            // init background slide images
+            $.backstretch([
+                "img/2.jpg",
+                "img/1.jpg",
+                "img/3.jpg",
+                "img/4.jpg"
+            ], {
+                fade: 1000,
+                duration: 8000
+            });
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+
+</body>
+<!-- END BODY -->
+
+</html>

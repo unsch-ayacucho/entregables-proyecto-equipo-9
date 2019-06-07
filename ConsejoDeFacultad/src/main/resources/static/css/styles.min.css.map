@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,aAAc,CACV,UAAU,CAAE,eAAe,CAC3B,aAAa,CAAE,eAAe,CAC9B,WAAW,CAAE,eAAe,CAC5B,YAAY,CAAE,eAAe,CAEjC,aAAa,CACT,eAAe,CAAE,eAAe,CAGpC,6BAA8B,CAC1B,gBAAgB,CAAE,SAAS,CAG/B,WAAY,CACR,KAAK,CAAE,eAAe,CAG1B,+FAAsG,CAClG,KAAK,CAAE,IAAI,CAGf,8BAA+B,CAC3B,UAAU,CAAE,SAAS",
-"sources": ["../scss/styles.scss"],
-"names": [],
-"file": "styles.min.css"
-}

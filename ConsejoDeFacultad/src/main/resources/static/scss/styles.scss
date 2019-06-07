@@ -4,7 +4,8 @@
     margin-left: 10px !important;
     margin-right: -5px !important;
 }
-.logo-wrapper{
+
+.logo-wrapper {
     text-decoration: none !important;
 }
 
@@ -16,7 +17,7 @@
     color: #fff !important;
 }
 
-.page-header .page-header-top .top-menu .navbar-nav > li.dropdown-user > .dropdown-toggle > .username {
+.page-header .page-header-top .top-menu .navbar-nav>li.dropdown-user>.dropdown-toggle>.username {
     color: #fff;
 }
 
@@ -24,3 +25,92 @@
     background: #444d58bd;
 }
 
+
+// estilos de pagina de home
+// begin home
+body {
+    margin: 0;
+    min-height: 95vh;
+    background-image: url("/img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #52c4df, #ad55c1);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+// End home
+
+
+//BEGIN BUTONS
+/* Buttons styles */
+:root {
+    --white: white;
+    --black: black;
+    --blue: #4267B2;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centrar-titulo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.btn-ghost {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--white);
+    padding: 20px 80px;
+    color: var(--black);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background: var(--white);
+    transition: color 0.5s, background 0.5s;
+    font-size: 1em;
+    min-width: 140px;
+    text-align: center;
+}
+
+.btn-ghost.round {
+    border-radius: 50px;
+}
+
+/** BLUE */
+.btn-ghost.blue {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+.btn-ghost.blue:hover {
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.btn-ghost.blue:active {
+    box-shadow: inset 0 0 20px var(--blue);
+}
+
+/** BLUE */
+
+//END BUTTONS
