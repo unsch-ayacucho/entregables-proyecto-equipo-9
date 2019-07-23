@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+
 <html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head th:fragment="head" th:remove="tag">
@@ -9,11 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta content="Sistema Web para la unidad académica de consejo de Facultad UNSCH" name="description">
     <meta content="Ingeniería de Sistemas-Grupo 09 " name="author">
+    
     <title>Consejo de Facultad</title>
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
-        type="text/css">
+    
+    
+    <!-- link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+        type="text/css"-->
+        
     <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" />
     <link rel="stylesheet" th:href="@{/css/simple-line-icons.min.css}" />
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
@@ -52,12 +55,9 @@
     </div>
     <!-- END PRE-FOOTER -->
     <!-- BEGIN FOOTER -->
-    <div class="page-footer">
+    <div th:fragment="footer"  class="page-footer">
         <div class="container">
-            2016 &copy; Metronic by keenthemes. <a
-                href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes"
-                title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase
-                Metronic!</a>
+            2019 &copy; CONSEJO DE FACULTAD Todos los derechos reservados.
         </div>
     </div>
     <div class="scroll-to-top">
@@ -87,13 +87,6 @@
 
     <!-- END CORE PLUGINS -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script th:src="@{/js/jquery.vmap.min.js}"></script>
-    <script th:src="@{/js/jquery.vmap.russia.js}"></script>
-    <script th:src="@{/js/jquery.vmap.world.js}"></script>
-    <script th:src="@{/js/jquery.vmap.europe.js}"></script>
-    <script th:src="@{/js/jquery.vmap.germany.js}"></script>
-    <script th:src="@{/js/jquery.vmap.usa.js}"></script>
-    <script th:src="@{/js/jquery.vmap.sampledata.js}"></script>
 
 
     <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->

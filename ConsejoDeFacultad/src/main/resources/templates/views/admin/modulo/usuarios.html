@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="views/admin/layout/layout :: head"></div>
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link rel="stylesheet" th:href="@{/css/jqvmap.css}" />
+    <link rel="stylesheet" th:href="@{/css/morris.css}" />
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+
+
+    <!-- BEGIN PAGE STYLES -->
+    <link rel="stylesheet" th:href="@{/css/tasks.css}" />
+    <!-- END PAGE STYLES -->
+
+    <!-- BEGIN THEME STYLES -->
+    <!-- para las fotos se vean redondas -->
+    <link rel="stylesheet" th:href="@{/css/components-rounded.css}" />
+    <link rel="stylesheet" th:href="@{/css/plugins.css}" />
+    <link rel="stylesheet" th:href="@{/css/layout.css}" />
+    <link id="style_color" rel="stylesheet" th:href="@{/css/default.css}" />
+    <link rel="stylesheet" th:href="@{/css/custom.css}" />
+    <!-- END THEME STYLES -->
+    <!-- BEGIN ESTILOS PROPIOS -->
+    <!-- <link rel="stylesheet" th:href="@{/css/styles.min.css}" /> -->
+    <!-- END ESTILOS PROPIOS -->
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    
+    <div class="page-header">
+        <div class="page-header-top">
+            <div th:replace="views/admin/layout/layout :: header"></div>
+        </div>
+        <div class="page-header-menu">
+            <div th:replace="views/admin/layout/layout :: menu"></div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- BEGIN PAGE CONTAINER -->
+
+        
+        
+        
+        <!-- BEGIN PAGE CONTENT -->
+ <div class="page-content">
+		<div class="container">
+			<h1>SESION ORDINARIA ADMINISTRADOR</h1>
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			
+			
+			<!-- BEGIN PAGE CONTENT INNER -->
+			<div class="row">
+				<div class="col-md-12">
+				<br>
+					<div class="note note-success">
+									<p>
+										 Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. The complete set of 439 icons in Font Awesome 4.1.0
+									</p>
+									 For more info check out: <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a>
+					</div>
+					<!-- Begin: life time stats -->
+					<div class="portlet light">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-book"></i>
+								<span class="caption-subject font-green-sharp bold uppercase">SESIONES ORDINARIAS</span>
+								
+								
+							</div>
+							
+						</div>
+						
+					</div>				
+			</div>
+		</div>
+ 	</div>
+		<!-- END PAGE CONTENT -->
+
+  </div>
+    <!-- END PAGE CONTAINER -->
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="page-prefooter">
+        <div th:replace="views/admin/layout/layout :: prefooter"></div>
+    </div>
+    <!-- END PRE-FOOTER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer">
+         <div th:replace="views/admin/layout/layout :: footer"></div>
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!-- END FOOTER -->
+
+
+
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery-migrate.min.js}"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap-hover-dropdown.min.js}"></script>
+    <script th:src="@{/js/jquery.slimscroll.min.js}"></script>
+    <script th:src="@{/js/jquery.blockui.min.js}"></script>
+    <script th:src="@{/js/jquery.cokie.min.js}"></script>
+    <script th:src="@{/js/jquery.uniform.min.js}"></script>
+
+
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script th:src="@{/js/jquery.vmap.min.js}"></script>
+    <script th:src="@{/js/jquery.vmap.russia.js}"></script>
+    <script th:src="@{/js/jquery.vmap.world.js}"></script>
+    <script th:src="@{/js/jquery.vmap.europe.js}"></script>
+    <script th:src="@{/js/jquery.vmap.germany.js}"></script>
+    <script th:src="@{/js/jquery.vmap.usa.js}"></script>
+    <script th:src="@{/js/jquery.vmap.sampledata.js}"></script>
+
+
+    <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
+    <script th:src="@{/js/morris.min.js}"></script>
+    <script th:src="@{/js/raphael-min.js}"></script>
+    <script th:src="@{/js/jquery.sparkline.min.js}"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script th:src="@{/js/metronic.js}"></script>
+    <script th:src="@{/js/layout.js}"></script>
+    <script th:src="@{/js/quick-sidebar.js}"></script>
+    <script th:src="@{/js/demo.js}"></script>
+    <script th:src="@{/js/index3.js}"></script>
+    <script th:src="@{/js/tasks.js}"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            Demo.init(); // init demo(theme settings page)
+            QuickSidebar.init(); // init quick sidebar
+            Index.init(); // init index page
+            Tasks.initDashboardWidget(); // init tash dashboard widget
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+
+</body>
+<!-- END BODY -->
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head" th:remove="tag">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="Sistema Web para la unidad académica de consejo de Facultad UNSCH" name="description">
+    <meta content="Ingeniería de Sistemas-Grupo 09 " name="author">
+    
+    <title>Consejo de Facultad</title>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    
+    
+    <!-- link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+        type="text/css"-->
+        
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/simple-line-icons.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/uniform.default.min.css}" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <link rel="shortcut icon" th:href="@{/img/icono.png}" />
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <div class="page-header">
+        <!-- BEGIN HEADER TOP -->
+        <div th:fragment="header" class="page-header-top">
+            <div th:replace="views/secretario/layout/header"></div>
+        </div>
+        <!-- END HEADER TOP -->
+        <!-- BEGIN HEADER MENU -->
+        <div th:fragment="menu" class="page-header-menu">
+            <div th:replace="views/secretario/layout/menu"></div>
+        </div>
+        <!-- END HEADER MENU -->
+    </div>
+
+    <!-- BEGIN PAGE CONTAINER -->
+    <div class="page-container">
+
+    </div>
+
+
+
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div th:fragment="prefooter" class="page-prefooter">
+        <div th:replace="views/secretario/layout/prefooter"></div>
+    </div>
+    <!-- END PRE-FOOTER -->
+    <!-- BEGIN FOOTER -->
+    <div th:fragment="footer"  class="page-footer">
+        <div class="container">
+            2019 &copy; CONSEJO DE FACULTAD Todos los derechos reservados.
+        </div>
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!-- END FOOTER -->
+
+
+    <!-- BEGIN JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery-migrate.min.js}"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap-hover-dropdown.min.js}"></script>
+    <script th:src="@{/js/jquery.slimscroll.min.js}"></script>
+    <script th:src="@{/js/jquery.blockui.min.js}"></script>
+    <script th:src="@{/js/jquery.cokie.min.js}"></script>
+    <script th:src="@{/js/jquery.uniform.min.js}"></script>
+
+
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+
+
+    <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
+    <script th:src="@{/js/morris.min.js}"></script>
+    <script th:src="@{/js/raphael-min.js}"></script>
+    <script th:src="@{/js/jquery.sparkline.min.js}"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script th:src="@{/js/metronic.js}"></script>
+    <script th:src="@{/js/layout.js}"></script>
+    <script th:src="@{/js/quick-sidebar.js}"></script>
+    <script th:src="@{/js/demo.js}"></script>
+    <script th:src="@{/js/index3.js}"></script>
+    <script th:src="@{/js/tasks.js}"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            Demo.init(); // init demo(theme settings page)
+            QuickSidebar.init(); // init quick sidebar
+            Index.init(); // init index page
+            Tasks.initDashboardWidget(); // init tash dashboard widget
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+</body>
+
+</html>

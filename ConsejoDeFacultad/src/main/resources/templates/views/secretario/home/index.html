@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="views/secretario/layout/layout :: head"></div>
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link rel="stylesheet" th:href="@{/css/jqvmap.css}" />
+    <link rel="stylesheet" th:href="@{/css/morris.css}" />
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+
+
+    <!-- BEGIN PAGE STYLES -->
+    <link rel="stylesheet" th:href="@{/css/tasks.css}" />
+    <!-- END PAGE STYLES -->
+
+    <!-- BEGIN THEME STYLES -->
+    <!-- para las fotos se vean redondas -->
+    <link rel="stylesheet" th:href="@{/css/components-rounded.css}" />
+    <link rel="stylesheet" th:href="@{/css/plugins.css}" />
+    <link rel="stylesheet" th:href="@{/css/layout.css}" />
+    <link id="style_color" rel="stylesheet" th:href="@{/css/default.css}" />
+    <link rel="stylesheet" th:href="@{/css/custom.css}" />
+    <!-- END THEME STYLES -->
+    <!-- BEGIN ESTILOS PROPIOS -->
+    <!-- <link rel="stylesheet" th:href="@{/css/styles.min.css}" /> -->
+    <!-- END ESTILOS PROPIOS -->
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <div class="page-header">
+        <div class="page-header-top">
+            <div th:replace="views/secretario/layout/layout :: header"></div>
+        </div>
+        <br>
+        <div class="page-header-menu">
+            <div th:replace="views/secretario/layout/layout :: menu"></div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+
+
+
+
+    <!-- BEGIN PAGE CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN PAGE HEAD -->
+        <div class="page-head">
+            <div class="container">
+                <!-- BEGIN PAGE TITLE -->
+                <div class="page-title">
+                   <a> UNIVERSIDAD NACIONAL SAN CRISTOBAL DE HUAMANGA</a> 
+                </div>
+                <!-- END PAGE TITLE -->
+                <!-- BEGIN PAGE TOOLBAR -->
+                <div class="page-toolbar">
+                    <!-- BEGIN THEME PANEL -->
+                    <div class="btn-group btn-theme-panel">
+                     
+                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-settings"></i>
+                        </a>
+                        <div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h3>CONSEJO DE FACULTAD</h3>
+                                    <div class="row">
+                                        
+                                        
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END THEME PANEL -->
+                </div>
+                <!-- END PAGE TOOLBAR -->
+            </div>
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- BEGIN PAGE CONTENT -->
+        <div class="page-content">
+  
+        <!--  aqui se agrega texto-->
+        <div class="container">
+       
+       
+       
+       						<div class="panel panel-success">
+								<div class="panel-heading">
+									<h3 class="panel-title">NOTA</h3>
+								</div>
+								<div class="panel-body">
+									<ul>
+										<li>
+											 El perfil secretario puede administrar la agenda.
+										</li>
+										<li>
+											 Puede redactar acta en cada sesion.
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							
+							
+							<div class="row">
+											<div class="col-md-6 col-sm-12">
+												<div class="portlet yellow-crusta box">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="fa fa-cogs"></i>SESION EXTRAORDINARIA
+														</div>
+														
+													</div>
+													<div class="portlet-body">
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 CODIGO:
+															</div>
+															<div class="col-md-7 value">
+																 003-SE
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 TIPO SESION:
+															</div>
+															<div class="col-md-7 value">
+																 EXTRARODINARIA
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 FECHA:
+															</div>
+															<div class="col-md-7 value">
+																 29/07/2019
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 HORA
+															</div>
+															<div class="col-md-7 value">
+																 13:00
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 ESTADO:
+															</div>
+															<div class="col-md-7 value">
+																<span class="label label-success">
+																PENDIENTE </span>
+															</div>
+														</div>
+														
+														
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-sm-12">
+												<div class="portlet blue-hoki box">
+													<div class="portlet-title">
+														<div class="caption">
+															<i class="fa fa-cogs"></i>SESION ORDINARIA
+														</div>
+														
+													</div>
+													<div class="portlet-body">
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 CODIGO:
+															</div>
+															<div class="col-md-7 value">
+																 001-SO
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 TIPO SESION:
+															</div>
+															<div class="col-md-7 value">
+																 ORDINARIA
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 FECHA:
+															</div>
+															<div class="col-md-7 value">
+																 21/07/2019
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 HORA
+															</div>
+															<div class="col-md-7 value">
+																 15:00
+															</div>
+														</div>
+														<div class="row static-info">
+															<div class="col-md-5 name">
+																 ESTADO:
+															</div>
+															<div class="col-md-7 value">
+																<span class="label label-warning">
+																SUSPENDIDO</span>
+															</div>
+														</div>
+														
+														
+													</div>
+												</div>
+											</div>
+										</div>
+							
+							
+        </div>
+        <!--  aqui se agrega texto-->
+           <!-- BEGIN QUICK SIDEBAR -->
+            <a href="javascript:;" class="page-quick-sidebar-toggler"><i class="icon-login"></i></a>
+            <div class="page-quick-sidebar-wrapper">
+                <div class="page-quick-sidebar">
+                    <div class="nav-justified">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active">
+                                <a href="#quick_sidebar_tab_1" data-toggle="tab">
+                                    PERFIL <span class="badge badge-danger">2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#quick_sidebar_tab_2" data-toggle="tab">
+                                    Alerts <span class="badge badge-success">7</span>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                    More<i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li>
+                                        <a href="#quick_sidebar_tab_3" data-toggle="tab">
+                                            <i class="icon-bell"></i> Alerts </a>
+                                    </li>
+                                    <li>
+                                        <a href="#quick_sidebar_tab_3" data-toggle="tab">
+                                            <i class="icon-info"></i> Notifications </a>
+                                    </li>
+                                    <li>
+                                        <a href="#quick_sidebar_tab_3" data-toggle="tab">
+                                            <i class="icon-speech"></i> Activities </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#quick_sidebar_tab_3" data-toggle="tab">
+                                            <i class="icon-settings"></i> Settings </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
+                                <div class="page-quick-sidebar-chat-users" data-rail-color="#ddd"
+                                    data-wrapper-class="page-quick-sidebar-list">
+                                </div>
+                                <h5  th:text="'TIPO USUARIO: '+ ${usuario}"> </h5>
+                                
+                            </div>
+                            <div class="tab-pane page-quick-sidebar-alerts" id="quick_sidebar_tab_2">
+                                <div class="page-quick-sidebar-alerts-list">
+                                <h5>TEXTO 2</h5>
+                                 </div>
+                                 
+                            </div>
+                            <div class="tab-pane page-quick-sidebar-settings" id="quick_sidebar_tab_3">
+                                <div class="page-quick-sidebar-settings-list">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="page-prefooter">
+        <div th:replace="views/secretario/layout/layout :: prefooter"></div>
+    </div>
+    <!-- END PRE-FOOTER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer">
+         <div th:replace="views/secretario/layout/layout :: footer"></div>
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!-- END FOOTER -->
+
+
+
+
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery-migrate.min.js}"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap-hover-dropdown.min.js}"></script>
+    <script th:src="@{/js/jquery.slimscroll.min.js}"></script>
+    <script th:src="@{/js/jquery.blockui.min.js}"></script>
+    <script th:src="@{/js/jquery.cokie.min.js}"></script>
+    <script th:src="@{/js/jquery.uniform.min.js}"></script>
+
+
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script th:src="@{/js/jquery.vmap.min.js}"></script>
+    <script th:src="@{/js/jquery.vmap.russia.js}"></script>
+    <script th:src="@{/js/jquery.vmap.world.js}"></script>
+    <script th:src="@{/js/jquery.vmap.europe.js}"></script>
+    <script th:src="@{/js/jquery.vmap.germany.js}"></script>
+    <script th:src="@{/js/jquery.vmap.usa.js}"></script>
+    <script th:src="@{/js/jquery.vmap.sampledata.js}"></script>
+
+
+    <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
+    <script th:src="@{/js/morris.min.js}"></script>
+    <script th:src="@{/js/raphael-min.js}"></script>
+    <script th:src="@{/js/jquery.sparkline.min.js}"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script th:src="@{/js/metronic.js}"></script>
+    <script th:src="@{/js/layout.js}"></script>
+    <script th:src="@{/js/quick-sidebar.js}"></script>
+    <script th:src="@{/js/demo.js}"></script>
+    <script th:src="@{/js/index3.js}"></script>
+    <script th:src="@{/js/tasks.js}"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            Demo.init(); // init demo(theme settings page)
+            QuickSidebar.init(); // init quick sidebar
+            Index.init(); // init index page
+            Tasks.initDashboardWidget(); // init tash dashboard widget
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+
+</body>
+<!-- END BODY -->
+
+</html>

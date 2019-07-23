@@ -1,16 +1,19 @@
 <div class="container">
-    <!-- BEGIN LOGO -->
-    <div class="page-logo">
-        <a href="index.html"><img src="/img/logo_unscCuartaParte.png" alt="logo"
-                class="logo-default"></a>
-    </div>
+    <!-- BEGIN LOGO-->
+ 	<!-- BEGIN LOGO -->
+			<div class="page-logo">
+				<a href="home"><img src="/img/logo_default.png" alt="logo" class="logo-default"></a>
+			</div>
+			<!-- END LOGO -->
     <!-- END LOGO -->
     <!-- BEGIN RESPONSIVE MENU TOGGLER -->
     <a href="javascript:;" class="menu-toggler"></a>
     <!-- END RESPONSIVE MENU TOGGLER -->
     <!-- BEGIN TOP NAVIGATION MENU -->
     <div class="top-menu">
+     
         <ul class="nav navbar-nav pull-right">
+        
             <!-- BEGIN NOTIFICATION DROPDOWN -->
             <li class="dropdown dropdown-extended dropdown-dark dropdown-notification" id="header_notification_bar">
                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
@@ -250,7 +253,7 @@
                             <li>
                                 <a href="inbox.html?a=view">
                                     <span class="photo">
-                                        <img src="../../assets/admin/layout3/img/avatar2.jpg" class="img-circle" alt="">
+                                        <img src="/img/avatar/avatar2.jpg" class="img-circle" alt="">
                                     </span>
                                     <span class="subject">
                                         <span class="from">
@@ -264,7 +267,7 @@
                             <li>
                                 <a href="inbox.html?a=view">
                                     <span class="photo">
-                                        <img src="../../assets/admin/layout3/img/avatar3.jpg" class="img-circle" alt="">
+                                        <img src="/img/avatar/avatar3.jpg" class="img-circle" alt="">
                                     </span>
                                     <span class="subject">
                                         <span class="from">
@@ -279,7 +282,7 @@
                             <li>
                                 <a href="inbox.html?a=view">
                                     <span class="photo">
-                                        <img src="../../assets/admin/layout3/img/avatar1.jpg" class="img-circle" alt="">
+                                        <img src="/img/avatar/avatar1.jpg" class="img-circle" alt="">
                                     </span>
                                     <span class="subject">
                                         <span class="from">
@@ -293,7 +296,7 @@
                             <li>
                                 <a href="inbox.html?a=view">
                                     <span class="photo">
-                                        <img src="../../assets/admin/layout3/img/avatar2.jpg" class="img-circle" alt="">
+                                        <img src="/img/avatar/avatar2.jpg" class="img-circle" alt="">
                                     </span>
                                     <span class="subject">
                                         <span class="from">
@@ -307,7 +310,7 @@
                             <li>
                                 <a href="inbox.html?a=view">
                                     <span class="photo">
-                                        <img src="../../assets/admin/layout3/img/avatar3.jpg" class="img-circle" alt="">
+                                        <img src="/img/avatar/avatar3.jpg" class="img-circle" alt="">
                                     </span>
                                     <span class="subject">
                                         <span class="from">
@@ -328,27 +331,27 @@
             <li class="dropdown dropdown-user dropdown-dark">
                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
                     data-close-others="true">
-                    <img alt="" class="img-circle" src="../../assets/admin/layout3/img/avatar9.jpg">
-                    <span class="username username-hide-mobile" th:text=${session.usuario}></span>
+                    <img alt="" class="img-circle" src="/img/avatar/avatar9.jpg">
+                    <span class="username username-hide-mobile" th:text="${usuario}"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-default">
                     <li>
                         <a href="extra_profile.html">
-                            <i class="icon-user"></i> My Profile </a>
+                            <i class="icon-user"></i> Mi perfil </a>
                     </li>
                     <li>
                         <a href="page_calendar.html">
-                            <i class="icon-calendar"></i> My Calendar </a>
+                            <i class="icon-calendar"></i> Mi calendario </a>
                     </li>
                     <li>
                         <a href="inbox.html">
-                            <i class="icon-envelope-open"></i> My Inbox <span class="badge badge-danger">
+                            <i class="icon-envelope-open"></i> Mis mensajes <span class="badge badge-danger">
                                 3 </span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <i class="icon-rocket"></i> My Tasks <span class="badge badge-success">
+                            <i class="icon-rocket"></i> Mis tareas <span class="badge badge-success">
                                 7 </span>
                         </a>
                     </li>
@@ -358,10 +361,9 @@
                         <a href="extra_lock.html">
                             <i class="icon-lock"></i> Lock Screen </a>
                     </li>
-                    <li>
-                        <a th:href="@{/logout}">
-                            <i class="icon-key"></i> Log Out </a>
-                    </li>
+ 					 <li><a th:href="@{/logout}"><i class="icon-key"></i>
+							Cerrar sesión</a>
+					</li>
                 </ul>
             </li>
             <!-- END USER LOGIN DROPDOWN -->

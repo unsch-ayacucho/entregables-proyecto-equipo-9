@@ -1,5 +1,5 @@
 package pe.edu.consejo.facultad.unsch.entities;
-// Generated 28-jun-2019 1:16:48 by Hibernate Tools 5.2.10.Final
+// Generated 27-may-2019 23:22:39 by Hibernate Tools 5.2.3.Final
 
 import java.util.Date;
 import java.util.HashSet;
@@ -32,6 +32,10 @@ public class Usuario implements java.io.Serializable {
 	private Set<UsuarioPerfil> usuarioPerfils = new HashSet<UsuarioPerfil>(0);
 
 	public Usuario() {
+	}
+	public Usuario(String nombre) {
+		this.nombre = nombre;
+	
 	}
 
 	public Usuario(String nombre, String usuario, String password, String foto, Byte estado, Date ultimoLogin,
@@ -75,7 +79,7 @@ public class Usuario implements java.io.Serializable {
 		this.usuario = usuario;
 	}
 
-	@Column(name = "password", length = 45)
+	@Column(name = "password", length = 100)
 	public String getPassword() {
 		return this.password;
 	}

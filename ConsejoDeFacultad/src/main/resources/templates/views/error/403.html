@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title th:text="${titulo}"></title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" th:href="@{css/font-awesome.min.css}" />
+	<!-- NProgress -->
+	<link rel="stylesheet" th:href="@{/css/nprogress.css}" />
+	<!-- Custom Theme Style -->
+	<link rel="stylesheet" th:href="@{/css/custom.min.css}" />
+</head>
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+		    <!-- page content -->
+	        <div class="col-md-12">
+	          <div class="col-middle">
+	            <div class="text-center text-center">
+	              <h1 class="error-number">403</h1>
+	              <h2>Acceso denegado</h2>
+	              <div th:inline="text">Hola '[[${#httpServletRequest.remoteUser}]]', 
+		                No tienes permisos para acceder a esta pagina.</div>
+	              <div class="mid_center">
+	                <h3>Buscar</h3>
+	                <form>
+	                  <div class="col-xs-12 form-group pull-right top_search">
+	                    <div class="input-group">
+	                      <input type="text" class="form-control" placeholder="Buscar por...">
+	                      <span class="input-group-btn">
+	                              <button class="btn btn-default" type="button">Ir!</button>
+	                          </span>
+	                    </div>
+	                  </div>
+	                </form>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	        <!-- /page content -->
+		</div>
+	</div>
+	<!-- /.container -->
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="views/decano/layout/layout :: head"></div>
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link rel="stylesheet" th:href="@{/css/jqvmap.css}" />
+    <link rel="stylesheet" th:href="@{/css/morris.css}" />
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+
+
+	<link rel="stylesheet" th:href="@{/css/dataTables.bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/buttons.bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/fixedHeader.bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/responsive.bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/scroller.bootstrap.min.css}" />
+	
+	
+    <!-- BEGIN PAGE STYLES -->
+    <link rel="stylesheet" th:href="@{/css/tasks.css}" />
+    <!-- END PAGE STYLES -->
+
+    <!-- BEGIN THEME STYLES -->
+    <!-- para las fotos se vean redondas -->
+    <link rel="stylesheet" th:href="@{/css/components-rounded.css}" />
+    <link rel="stylesheet" th:href="@{/css/plugins.css}" />
+    <link rel="stylesheet" th:href="@{/css/layout.css}" />
+    <link id="style_color" rel="stylesheet" th:href="@{/css/default.css}" />
+    <link rel="stylesheet" th:href="@{/css/custom.css}" />
+    <!-- END THEME STYLES -->
+    <!-- BEGIN ESTILOS PROPIOS -->
+    <!-- <link rel="stylesheet" th:href="@{/css/styles.min.css}" /> -->
+    <!-- END ESTILOS PROPIOS -->
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    
+    <div class="page-header">
+        <div class="page-header-top">
+            <div th:replace="views/decano/layout/layout :: header"></div>
+        </div>
+        
+        <div class="page-header-menu">
+            <div th:replace="views/decano/layout/layout :: menu"></div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- BEGIN PAGE CONTAINER -->
+
+        
+        
+        
+        <!-- BEGIN PAGE CONTENT -->
+ <div class="page-content">
+		<div class="container">
+						
+		
+			
+			<!-- BEGIN PAGE CONTENT INNER -->
+			<div class="row">
+				<div class="col-md-12">
+				<br>
+					<div class="note note-success note-bordered">
+						<p>
+							 Este modulo permite al secretario administrar las actas.
+						</p>
+					</div>
+					<!-- BEGIN PORTLET--> 
+					<div class="portlet light">
+						<div class="portlet-title">
+							<div class="caption font-purple-plum">
+								<i class="icon-list font-purple-plum"></i>
+								<span class="caption-subject bold uppercase"> OPCIONES</span>
+								
+							</div>
+							
+						</div>
+						<div class="portlet-body">
+																
+										<div class="alert alert-block alert-info fade in">
+								<button type="button" class="close" data-dismiss="alert"></button>
+								<h4 class="alert-heading">Informacion</h4>
+								<p>
+									 No existe ninguna opcion adicional.
+								</p>
+								
+							</div>
+										
+										
+						</div>
+									<!-- BEGIN FORM-->
+					
+							
+							
+						</div>
+						
+						
+											
+						
+					</div>
+					<!-- END PORTLET-->
+				</div>
+			
+			<!-- END PAGE CONTENT INNER -->
+	
+		
+		
+					
+			<div class="portlet light">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-th-large font-green-sharp"></i>
+								<span class="caption-subject font-green-sharp bold uppercase">SESIONES </span>
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse" data-original-title="" title="EXPANDIR">
+								</a>
+								
+								<a href="javascript:;" class="reload" data-original-title="" title="ACTUALIZAR">
+								</a>
+								
+							</div>
+						</div>
+						<div class="portlet-body"> 
+							<div class="table-responsive">
+								<table class="table">
+								<thead>
+								<tr>
+									<th>
+										 NUMERO
+									</th>
+									<th>
+										 TIPO SESION
+									</th>
+									<th>
+										 FECHA
+									</th>
+									<th>
+										 HORA
+									</th>
+									<th>
+										 AGENDA
+									</th>
+									<th>
+										 ESTADO
+									</th>
+									<th>
+										 ACCION
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								
+									<td>
+										 001-SO
+									</td>
+									<td>
+										 ORDINARIA
+									</td>
+									<td>
+										 23/07/2019
+									</td>
+									<td>
+										 11:00
+									</td>
+									<td>
+										 TESIS DAVID ZEA ZEA
+									</td>
+									
+									<td>
+											<span class="label label-sm label-success">
+											REALIZADO </span>
+									</td>
+									<td>
+											<a class="btn default btn-xs green-stripe" href="http://facultades.unsch.edu.pe/transparencia/wp-content/uploads/2018/04/ACTAS-CONSEJO-DE-FAC-FACEA-2016-2017.pdf">
+											VER ACTA </a>
+										</td>
+								</tr>
+								
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+			</div>
+			</div>
+	
+ </div>
+		<!-- END PAGE CONTENT -->
+
+ 
+    <!-- END PAGE CONTAINER -->
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="page-prefooter">
+        <div th:replace="views/decano/layout/layout :: prefooter"></div>
+    </div>
+    <!-- END PRE-FOOTER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer">
+         <div th:replace="views/decano/layout/layout :: footer"></div>
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!-- END FOOTER -->
+
+
+
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery-migrate.min.js}"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap-hover-dropdown.min.js}"></script>
+    <script th:src="@{/js/jquery.slimscroll.min.js}"></script>
+    <script th:src="@{/js/jquery.blockui.min.js}"></script>
+    <script th:src="@{/js/jquery.cokie.min.js}"></script>
+    <script th:src="@{/js/jquery.uniform.min.js}"></script>
+
+
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script th:src="@{/js/jquery.vmap.min.js}"></script>
+    <script th:src="@{/js/jquery.vmap.russia.js}"></script>
+    <script th:src="@{/js/jquery.vmap.world.js}"></script>
+    <script th:src="@{/js/jquery.vmap.europe.js}"></script>
+    <script th:src="@{/js/jquery.vmap.germany.js}"></script>
+    <script th:src="@{/js/jquery.vmap.usa.js}"></script>
+    <script th:src="@{/js/jquery.vmap.sampledata.js}"></script>
+
+
+    <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
+    <script th:src="@{/js/morris.min.js}"></script>
+    <script th:src="@{/js/raphael-min.js}"></script>
+    <script th:src="@{/js/jquery.sparkline.min.js}"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script th:src="@{/js/metronic.js}"></script>
+    <script th:src="@{/js/layout.js}"></script>
+    <script th:src="@{/js/quick-sidebar.js}"></script>
+    <script th:src="@{/js/demo.js}"></script>
+    <script th:src="@{/js/index3.js}"></script>
+    <script th:src="@{/js/tasks.js}"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            Demo.init(); // init demo(theme settings page)
+            QuickSidebar.init(); // init quick sidebar
+            Index.init(); // init index page
+            Tasks.initDashboardWidget(); // init tash dashboard widget
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+
+</body>
+<!-- END BODY -->
+
+</html>
